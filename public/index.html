@@ -17,21 +17,34 @@
 		<audio id="btnyel_sound" src="sounds/dongdongdongdongdong.mp3"/>
 		<audio id="btngrn_sound" src="sounds/rising.mp3"/>
 	</div>
+
+	<!-- Intro Page
+	/// ------------------------- ///
+	/// MAIN MENU                 ///
+	/// ------------------------- ///
+	-->
 	
 	<div id='intropage'>
 	
 		<!-- Introduction page --> 
 		<div class="intro-container">
-		<div class='elonhex_border'><div id="questionTitle" class='elonhex'>Quiz Show!</div></div>
+		<div class='elonhex_border'><div id="IntroTitle" class='elonhex'>Quiz Show!</div></div>
 		<div id="intro_text" class="intro-text">
 		Are you ready? </br> Everybody press your buzzers and we can start playing!	
 		</div>
-		<div><button id="btnPlay" class="bigText nice_button">Play!</button></div>
+		<button id="btnPlay" class="bigText nice_button">Play!</button>
 		
 		</div>
 		</div>
 	
-			
+	<!-- Main Page
+	/// ------------------------- ///
+	/// QUESTIONS                 ///
+	/// ------------------------- ///
+	-->
+	
+	
+	
 	<div id='mainpage' style="display:none;">
 	
 		<!-- Title --> 
@@ -71,9 +84,9 @@
 		
 	</div>
 
-			<!-- Button Responses -->
-		<footer>
-			<div class="button-container">
+		<!-- Button Responses -->
+		<footer id="button_footer" style="display:none">
+			<div class="button-container" id="button-container">
 			<div class='imgbtncase'><div class='imgbtnholder'><div id='btnred' class='btnred'><div class='imgbtnredtop'></div></div></div></div>
 			<div class='imgbtncase'><div class='imgbtnholder'><div id='btnyel' class='btnyel'><div class='imgbtnyeltop'></div></div></div></div>
 			<div class='imgbtncase'><div class='imgbtnholder'><div id='btngrn' class='btngrn'><div class='imgbtngrntop'></div></div></div></div>
@@ -82,6 +95,18 @@
 		</footer>
 
 		
+	<!--Pop up Display! -->
+	<a id="popup-open" href="#popup1" style="display:none;">Let me Pop up</a>
+	<div id="popup1" class="overlay">
+	<div class="popup">
+		<a id="popup-close" class="popup-close" href="#" style="display:block;">X</a>
+		<h1 id="popup_title" style="text-align:center; font-size:3em;">When is Christmas?</h1>
+		<div class="popup-btn-container">
+			<button id= "btnyes" class="btnyes">✓</button>
+			<button id= "btnno" class="btnno">✕</button>
+		</div>
+	</div>
+</div>	
 	
     <div id="chat" style="display:none;">
        
@@ -97,5 +122,6 @@
 	
 	
     <script src="chat.js"></script>
+    <script src="timer.js"></script>
   </body>
 </html>

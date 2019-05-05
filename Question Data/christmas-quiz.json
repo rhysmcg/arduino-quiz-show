@@ -1,0 +1,27 @@
+{
+  "title":"Christmas Quiz",
+  "questions": [
+    {
+      "Question": "When is Christmas?",
+      "Answers": [
+        "23 December",
+        "25 December",
+        "27 December",
+        "26 December"
+      ],
+      "Correct": 1,
+      "Time": 20
+    },
+    {
+      "Question": "What season is Christmas in Australia?",
+      "Answers": [
+        "Summer",
+        "Autumn",
+        "Spring",
+        "Winter"
+      ],
+      "Correct": 0,
+      "Time": 20
+    }
+  ]
+}

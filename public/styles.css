@@ -116,15 +116,11 @@ background: url('images/bg-purple.png') no-repeat center center fixed;
   grid-row-gap: 100px;
   justify-items: center;
 }
-/* Button Colours, Styles and Animations  
 
-.btnred {
-  background: #dc3545;
-  color: #fff;
-  font-size: 5em;
-  text-shadow: 2px 2px 4px #000000;
-}
+/* Button Colours, Styles and Animations  */
 
+
+/*
 .btnblu {
   background: #007bff;
   color: #fff;
@@ -137,13 +133,9 @@ background: url('images/bg-purple.png') no-repeat center center fixed;
   font-size: 5em;
   text-shadow: 2px 2px 4px #000000;
  }
-.btngrn {
-  background: #28a745;
-  color: #fff;
-  font-size: 5em;
-  text-shadow: 2px 2px 4px #000000;
- }
-*/
+ 
+ */
+
  .paused{
      animation-play-state:paused;
  }
@@ -286,7 +278,7 @@ h2 {
 
 #questionTitle {
 	text-align: center;
-	font-size: 6em;
+	font-size: 4.5em;
 	text-shadow: 2px 2px 4px #000000;
 }
 
@@ -406,6 +398,97 @@ span {
 
 	clip-path: polygon(98% 0, 100% 50%, 98% 100%, 2% 100%, 0 50%, 2% 0);
 }
+
+
+
+/* Popup Styles */
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  background: rgba(0, 0, 0, 0.4);
+  transition: opacity 500ms;
+  visibility: hidden;
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  opacity: 0;
+  cursor: pointer; /* Add a pointer on hover */
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
+
+.btnyes {
+  background: #28a745;
+  color: #fff;
+  width: 50%;
+  font-size: 5em;
+  text-shadow: 2px 2px 4px #000000;
+ }
+ 
+ .btnno {
+  background: #dc3545;
+  color: #fff;
+   width: 50%;
+  font-size: 5em;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+
+.popup-btn-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  justify-items: center;
+}
+
 
 
 /* Button Images */
