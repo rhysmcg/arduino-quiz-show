@@ -1,11 +1,16 @@
 var express = require('express');
 var socket = require('socket.io');
 
+// set the port of our application
+// process.env.PORT lets the port be set by Heroku
+var port = process.env.PORT || 4000;
+
 // App setup
 var app = express();
-var server = app.listen(4000, function(){
+var server = app.listen(port, function(){
   console.log('listening to requests on port 4000')
 });
+
 
 // Static files
 app.use(express.static('public'));
