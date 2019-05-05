@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Quiz Template</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
+    <link href="/styles.css" rel="stylesheet" />
+	<link href="/animate.css" rel="stylesheet" />
+  </head>
+  <body>
+  
+    <div id="music">
+		<embed id="bg_music" src="sounds/gameshow_the_winner.mp3" width="180" height="90" loop="false" autostart="false" hidden="true"/> 
+		<audio id="quiz_music" src="sounds/Gameshow_Music_Jon_Brooks.mp3" /> 
+		<audio id="btnred_sound" src="sounds/dingding.mp3"/>
+		<audio id="btnblu_sound" src="sounds/doingoingoing.mp3"/>
+		<audio id="btnyel_sound" src="sounds/dongdongdongdongdong.mp3"/>
+		<audio id="btngrn_sound" src="sounds/rising.mp3"/>
+	</div>
+	
+	<div id='intropage'>
+	
+		<!-- Introduction page --> 
+		<div class="intro-container">
+		<div class='elonhex_border'><div id="questionTitle" class='elonhex'>Quiz Show!</div></div>
+		<div id="intro_text" class="intro-text">
+		Are you ready? </br> Everybody press your buzzers and we can start playing!	
+		</div>
+		<div><button id="btnPlay" class="bigText nice_button">Play!</button></div>
+		
+		</div>
+		</div>
+	
+			
+	<div id='mainpage' style="display:none;">
+	
+		<!-- Title --> 
+		<div class="title-container">
+		<div class='elonhex_border'><div id="questionTitle" class='elonhex'>When is Christmas?</div></div>
+		<div class="Space"></div>
+		</div>
+		<!-- <div id="reward"><h2 class="trycss">$500!</h2></div> -->
+		
+
+		
+		<!-- Questions -->
+		<!-- <div class="question-middle"><div id="countdown" class="countdown">10</div> -->
+		<div class="question-container">
+			<div class='elonhex_border opt1'><button class='elonhex' id='opt1'>26th of December</button></div>			
+			<div class='elonhex_border opt2'><button class='elonhex' id='opt2'>27th of December</button></div>
+			<div class='elonhex_border opt3'><button class='elonhex' id='opt3'>28th of December</button></div>
+			<div class='elonhex_border opt4'><button class='elonhex' id='opt4'>29th of December</button></div>
+						
+			<div class='timer'>
+				<div id="countdown" class="countdown">
+					<svg viewBox="-50 -50 100 100" preserveAspectRatio="xMidYMid meet" style="width: 100%; height: 100%; point-events: none">
+						<defs>
+					<linearGradient id="rainbow" x1="0" x2="0" y1="0" y2="100%" gradientUnits="userSpaceOnUse" >
+					  <stop stop-color="#ffc002" offset="0%"/>
+					  <stop stop-color="#795b04" offset="100%"/>
+					</linearGradient>
+					</defs>
+					
+					
+					<text id="countdownText" fill="url(#rainbow)" stroke="black" stroke-width="2px" font-family="Arial" font-weight="bold" font-size="90" text-anchor="middle"  dy=".3em">20</text></svg>
+				</div>
+			
+			</div>
+		</div>
+		<!-- </div> -->
+		
+	</div>
+
+			<!-- Button Responses -->
+		<footer>
+			<div class="button-container">
+			<div class='imgbtncase'><div class='imgbtnholder'><div id='btnred' class='btnred'><div class='imgbtnredtop'></div></div></div></div>
+			<div class='imgbtncase'><div class='imgbtnholder'><div id='btnyel' class='btnyel'><div class='imgbtnyeltop'></div></div></div></div>
+			<div class='imgbtncase'><div class='imgbtnholder'><div id='btngrn' class='btngrn'><div class='imgbtngrntop'></div></div></div></div>
+			<div class='imgbtncase'><div class='imgbtnholder'><div id='btnblu' class='btnblu'><div class='imgbtnblutop'></div></div></div></div>		
+			</div>
+		</footer>
+
+		
+	
+    <div id="chat" style="display:none;">
+       
+      <div id="chat-window">
+        <div id="output"></div>
+        <div id="feedback"></div>
+
+      </div>
+      <input id="handle" type="text" placeholder="Handle" />
+      <input id="message" type="text" placeholder="Message" />
+      <button id="send">Send</button>
+    </div>
+	
+	
+    <script src="chat.js"></script>
+  </body>
+</html>

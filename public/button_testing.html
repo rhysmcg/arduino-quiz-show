@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Websockets 101</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
+    <link href="/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+  
+  
+  
+    <div id="music">
+		<!-- <embed src="sounds/Gameshow_Music_Jon_Brooks.mp3" width="180" height="90" loop="false" autostart="false" hidden="true"　display="false" /> -->
+		<audio id="btnred_sound" src="sounds/dingding.mp3"></audio>
+		<audio id="btnblu_sound" src="sounds/doingoingoing.mp3"></audio>
+		<audio id="btnyel_sound" src="sounds/dongdongdongdongdong.mp3"></audio>
+		<audio id="btngrn_sound" src="sounds/rising.mp3"></audio>
+	</div>
+	
+	
+	
+	
+    <div id="questionTitle"><h1>When is Christmas?</h1></div>
+    <!-- <div id="reward"><h2 class="trycss">$500!</h2></div> -->
+    <div id="questionBody"><img/></div>
+    <div id="questionButtons" class="answers">
+
+      <div class="grid2x2">
+        <div class="box"><button id= "btnred" class="btnred">Jackson</button></div>
+        <div class="box"><button id= "btnblu" class="btnblu">James</button></div>
+        <div class="box"><button id= "btnyel" class="btnyel">Joseph</button></div>
+        <div class="box"><button id= "btngrn" class="btngrn">Jennifer</button></div>
+      </div>
+    </div>
+	
+	
+	
+      <div class="grid1x1">
+        <div class="yes_or_no"><button id= "btnyes" class="btngrn">✓</button></div>
+        <div class="yes_or_no"><button id= "btnno" class="btnred">✕</button></div>
+      </div>
+    </div>
+
+
+    <div id="chat">
+      <div id="chat-window">
+        <div id="output"></div>
+        <div id="feedback"></div>
+
+      </div>
+      <input id="handle" type="text" placeholder="Handle" />
+      <input id="message" type="text" placeholder="Message" />
+      <button id="send">Send</button>
+    </div>
+    <script src="chat.js"></script>
+  </body>
+</html>
