@@ -158,8 +158,16 @@ document.getElementById('btnyes').onclick = function() {
 	
 	// WHO PRESSED THE Button
 	console.log(btnpressedorder[0] + " pressed the button. He gets 1 Point")
-	// Give Score
 	
+	// Unhide the REWARDS Fullscreen DIV (flex is needed)	
+	document.getElementById('rewards').style.display = 'flex';
+	
+	// CALL THE "TADA" animation and hide it after it's done
+    animateCSS('#rewards', 'tada', function(){
+		animateCSS('#rewards', 'fadeOutUp', function(){
+			document.getElementById('rewards').style.display = 'none';
+	  })
+	});
 	next_question()
 	
 
@@ -278,6 +286,14 @@ Arduino
 
 BIG $500!! appear in the middle of the screen (use animate CSS) and maybe a SVG animation of lightbulbs Marquee and some CHA CHING sounds would be good too.
 
+Think of the design, probably define the SVG so it can use aniamted CSS, seems easier and more resources available!
+
+
+
+https://codepen.io/thykka/pen/wyYXqN
+
+
+CLICK BUTTON TO SEND SIGNAL (for testing purposes)
 
 
 

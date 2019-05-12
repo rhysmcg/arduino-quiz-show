@@ -28,13 +28,18 @@ function stop(){
  stopped = true;
  running = false;
  currentCount = 0;
+ //
 }
 
 function update(item){
   document.getElementById('countdownText').textContent  = item; 
   console.log(item);
   --currentCount;
-  if(currentCount < 0){stop()}
+  if(currentCount < 0){
+	  stop()
+	  next_question(); // Go to next question
+	  clearInterval(timeout);
+	  }
 }
 
 function reset() {

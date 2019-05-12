@@ -84,13 +84,30 @@
 		
 	</div>
 
-		<!-- Button Responses -->
+		<!-- Button Responses 
+		
+		/// Unfortunately I have to insert the ugly SVG files so that they can be manipulated here.
+		/// It doesn't seem possible to add a "glow" to an external SVG file without making the entire box glow.
+		/// Sigh, at least it will work!
+		-->
+
+		
 		<footer id="button_footer" style="display:none">
 			<div class="button-container" id="button-container">
+			
+			
+
+			
+			<img id='btnred' class='btnred' src="images/btnred.svg" />
+			<img id='btnyel' class='btnyel' src="images/btnyel.svg" />
+			<img id='btngrn' class='btngrn' src="images/btngrn.svg" />
+			<img id='btnblu' class='btnblu' src="images/btnblu.svg" />
+			<!--
 			<div class='imgbtncase'><div class='imgbtnholder'><div id='btnred' class='btnred'><div class='imgbtnredtop'></div></div></div></div>
 			<div class='imgbtncase'><div class='imgbtnholder'><div id='btnyel' class='btnyel'><div class='imgbtnyeltop'></div></div></div></div>
 			<div class='imgbtncase'><div class='imgbtnholder'><div id='btngrn' class='btngrn'><div class='imgbtngrntop'></div></div></div></div>
-			<div class='imgbtncase'><div class='imgbtnholder'><div id='btnblu' class='btnblu'><div class='imgbtnblutop'></div></div></div></div>		
+			<div class='imgbtncase'><div class='imgbtnholder'><div id='btnblu' class='btnblu'><div class='imgbtnblutop'></div></div></div></div>
+			-->
 			</div>
 		</footer>
 
@@ -105,8 +122,23 @@
 			<button id= "btnyes" class="btnyes">✓</button>
 			<button id= "btnno" class="btnno">✕</button>
 		</div>
+		
 	</div>
 </div>	
+
+	<!-- Use this to flash an image to the main screen for feedback 
+	
+	For example, money received... X for everyone got it incorrect
+	
+	Perhaps even a "START!"?
+	
+	-->
+
+	<div id ="rewards" class="rewards" style="display:none;">
+	<img id="500dols" src="images/txt_$500.svg" style="width:1000px;"/>
+	</div>
+	
+	
 	
     <div id="chat" style="display:none;">
        

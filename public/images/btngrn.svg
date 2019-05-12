@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg fill="none" stroke-linecap="square" stroke-miterlimit="10" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<clipPath id="c">
+<path d="m0 0h100v100h-100v-100z"/>
+</clipPath>
+<g clip-path="url(#c)">
+<path d="m0 0h100v100h-100z" fill="#000" fill-opacity="0" fill-rule="evenodd"/>
+<g filter="url(#a)">
+<use transform="translate(0 1)" xlink:href="#b"/>
+</g>
+<defs>
+<filter id="a" filterUnits="userSpaceOnUse">
+<feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="0.5"/>
+<feComponentTransfer color-interpolation-filters="sRGB" in="blur">
+<feFuncR slope="0" type="linear"/>
+<feFuncG slope="0" type="linear"/>
+<feFuncB slope="0" type="linear"/>
+<feFuncA slope="0.5" type="linear"/>
+</feComponentTransfer>
+</filter>
+</defs>
+<g id="b">
+<path d="m2.7577 50.001c0-26.091 21.151-47.242 47.242-47.242 12.529 0 24.545 4.9772 33.405 13.837 8.8595 8.8595 13.837 20.876 13.837 33.405 0 26.091-21.151 47.242-47.242 47.242s-47.242-21.151-47.242-47.242z" fill="#fff" fill-rule="evenodd"/>
+<path d="m2.7577 50.001c0-26.091 21.151-47.242 47.242-47.242 12.529 0 24.545 4.9772 33.405 13.837 8.8595 8.8595 13.837 20.876 13.837 33.405 0 26.091-21.151 47.242-47.242 47.242s-47.242-21.151-47.242-47.242z" fill-rule="evenodd" stroke="#000" stroke-linecap="butt" stroke-linejoin="round"/>
+</g>
+<path d="m10.419 50.001c0-21.86 17.721-39.581 39.581-39.581 10.497 0 20.565 4.1701 27.988 11.593 7.4228 7.4228 11.593 17.49 11.593 27.988 0 21.86-17.721 39.581-39.581 39.581-21.86 0-39.581-17.721-39.581-39.581z" fill="#000"/>
+<path d="m10.419 50.001c0-21.86 17.721-39.581 39.581-39.581 10.497 0 20.565 4.1701 27.988 11.593 7.4228 7.4228 11.593 17.49 11.593 27.988 0 21.86-17.721 39.581-39.581 39.581-21.86 0-39.581-17.721-39.581-39.581z" stroke="#000" stroke-linecap="butt" stroke-linejoin="round"/>
+<path d="m17.697 50.001c0-17.84 14.462-32.302 32.302-32.302 8.567 0 16.783 3.4032 22.841 9.461 6.0578 6.0578 9.4611 14.274 9.4611 22.841 0 17.84-14.462 32.302-32.302 32.302-17.84 0-32.302-14.462-32.302-32.302z" fill="#6aa84fff"/>
+<path d="m17.697 50.001c0-17.84 14.462-32.302 32.302-32.302 8.567 0 16.783 3.4032 22.841 9.461 6.0578 6.0578 9.4611 14.274 9.4611 22.841 0 17.84-14.462 32.302-32.302 32.302-17.84 0-32.302-14.462-32.302-32.302z" stroke="#000" stroke-linecap="butt" stroke-linejoin="round"/>
+<path d="m21.368 50.002c0-15.813 12.819-28.632 28.632-28.632 7.5938 0 14.877 3.0166 20.246 8.3863 5.3696 5.3696 8.3863 12.652 8.3863 20.246 0 15.813-12.819 28.632-28.632 28.632-15.813 0-28.632-12.819-28.632-28.632z" fill="#00ff00ff"/>
+</g>
+</svg>
