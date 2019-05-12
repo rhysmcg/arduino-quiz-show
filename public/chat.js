@@ -149,7 +149,7 @@ getJSON('quizzes/christmas-quiz.json', function(err, data) {
 
 
 // IF CORRECT 
-
+// If no has been pressed, then give score to the no player...
 
 document.getElementById('btnyes').onclick = function() {
 	
@@ -225,17 +225,30 @@ function next_question() {
 
 
 // IF INCORRECT
+
+// Change this code for two players
+
+
 document.getElementById('btnno').onclick = function() {
-	document.getElementById('popup-close').click();
+	
+	players = btnpressedorder.length
+	nextPlayer = btnpressedorder = btnpressedorder[1]
+
+// Make sure it checks if the list exists first
+	
+if (players == 2) {
+
+	alert('Next player is...' + nextPlayer)
+	
+	// No Score, everyone got it wrong
+	} else {
+
+	document.getElementById('popup-close').click();	
+	next_question()
+	
 }
-
-
-
-
-//quiz_data.questions
-
-
-	// data.questions[0]["Question"]);
+	
+}
 
 
 
@@ -245,11 +258,12 @@ document.getElementById('btnno').onclick = function() {
 
 /* Brainstorming the rest of the ideas 
 
+>> Add a Score Counter!
 
 If a button has been pressed
 	>> Pause the timer (Look at a basic javascript Start, Pause, Reset timer and use that instead)
 
-	>> Add a Score Counter!
+	
 	
 Arduino
 
@@ -257,10 +271,12 @@ Arduino
 	>> Get shorter micro USB cables to charge it
 	>> Do some research on cheap batteries and try to get some
 
-	
-	>> Final Quiz Screen
+>> Final Quiz Screen
 
 
+>> ANIAMTED Text
+
+BIG $500!! appear in the middle of the screen (use animate CSS) and maybe a SVG animation of lightbulbs Marquee and some CHA CHING sounds would be good too.
 
 
 
@@ -269,11 +285,11 @@ Arduino
 */
 
 
-
-
-
-
-
+// Use this to test things
+function sendBtn(btn) {
+	document.getElementById('handle').innerHTML = btn
+	document.getElementById('send').click()
+}
 
           
 

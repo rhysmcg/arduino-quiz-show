@@ -5,6 +5,7 @@ var currentCount = 0;
 var running = false;
 interval = 1000;
 maxCount = 20; 
+var timeout;
 
 function start() {
   if (stopped){
@@ -39,11 +40,12 @@ function update(item){
 function reset() {
   currentCount = maxCount;
   document.getElementById('countdownText').textContent  = currentCount; 
+   clearInterval(timeout);
 }
 
 function loop(){
   if (!stopped){
     if (!paused){update(currentCount);}
-    setTimeout(function(){loop()}, interval)
+    timeout = setTimeout(function(){loop()}, interval)
   }
 }
